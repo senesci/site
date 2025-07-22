@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #191919ef;
+  --color: rgb(244, 244, 244);
+  --accent: rgb(51, 150, 255);
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  padding: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d7d7d7;
+  margin-top: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+a {
+  display: inline-block;
+  color: var(--accent);
+  font-size: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+main {
+  margin-top: 45px;
+  padding: 10px;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.0s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
