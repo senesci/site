@@ -96,3 +96,17 @@ ul {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
